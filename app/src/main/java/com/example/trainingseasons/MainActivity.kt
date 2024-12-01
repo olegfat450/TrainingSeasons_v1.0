@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
       private lateinit var imageTv: ImageView
       private lateinit var toolbar: Toolbar
       private lateinit var button1: Button
+      private lateinit var button2: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         button1 = findViewById(R.id.button1)
+        button2 = findViewById(R.id.button2)
 
 
         // imageTv = findViewById(R.id.imageView)
@@ -43,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
 
         button1.setOnClickListener { startActivity(Intent(this,Activity3::class.java)) }
-
+        button2.setOnClickListener { startActivity(Intent(this,Activity2::class.java)) }
         toolbar.setBackgroundColor(Color.BLUE)
         toolbar.setTitleTextColor(Color.WHITE)
         title = "Тренировки по фитнесу"

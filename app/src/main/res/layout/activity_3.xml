@@ -17,19 +17,24 @@
     <TextView
         android:id="@+id/textTv1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
-        android:text="TextView"
+        android:layout_height="56sp"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <TextView
         android:id="@+id/textTv2"
+        android:gravity="center"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
         android:layout_width="match_parent"
-        android:layout_height="100sp"
+        android:layout_height="80sp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTv1" />
@@ -42,7 +47,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textTv3"
         />
 
     <LinearLayout
@@ -82,11 +87,11 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textTv3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="32sp"
         android:layout_marginTop="9dp"
-        android:text="TextView"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTv2" />
